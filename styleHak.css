@@ -1,0 +1,60 @@
+/* body {
+  background: linear-gradient(120deg, #0000ff, #b22222);
+} */
+
+.navbar {
+  height: 80px;
+  padding: 0;
+}
+
+.btn-navbar img {
+  width: 60px;
+}
+
+.modal-wind {
+  max-width: 100%;
+}
+
+.add-form button {
+  width: 447px;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.posts {
+  margin: 40px;
+}
+
+.post button {
+  border: none;
+  background: transparent;
+}
+
+.card-image {
+  border-radius: 6px;
+  object-fit: contain;
+}
+.btn-delete img,
+.btn-edit img {
+  width: 30px;
+}
+
+.post {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.buttons button {
+  padding: 0;
+}
+
+.btn-edit {
+  margin-right: 10px;
+}
+
+.buttons,
+.post-text {
+  margin: 10px;
+}
