@@ -65,15 +65,42 @@ async function getPosts() {
   console.log(currentPosts);
   postsList.html("");
   currentPosts.forEach((item) => {
-    postsList.append(`
-    <div class="post m-3 d-flex flex-column" style="width: 320px">
-    <div class="d-block">
-     <button class="post-item" id="${item.id}"><img class="card-image" style="width: 320px" src="${item.image}"/></button>
-     </div>
+    // postsList.append(`
+    // <div class="post m-3 col" style="width: 320px">
+    // <div class="d-block">
+    //  <button class="post-item" id="${item.id}">
+    // <img class="card-image" style="width: 320px" src="${item.image}"/>
+    // </button>
+    //  </div>
 
-     <div class="buttons d-block            ">
-     
-     <button id="${item.id}"class="btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    //  <div class="buttons d-block            ">
+
+    //  <button id="${item.id}"class="btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+    //  <img src="https://pics.freeicons.io/uploads/icons/png/19067155231543238878-512.png" class=" ">
+
+    //  </button>
+
+    //  <button class="btn-delete" id="${item.id}">
+
+    //   <img src="https://pics.freeicons.io/uploads/icons/png/18192734801556282330-512.png" class=" ">
+
+    //   </button>
+    //   </div>
+    // <div class="post-text d-block mb-3">
+    // <h5>${item.header}</h5>
+    // <span>${item.desc}</span>
+
+    //  </div>
+    // </div>
+    //     `);
+
+    postsList.append(`
+        <div class="post col-md-4 col-xs-12 col-sm-6 g-4">
+        <div class="card post-item" id="${item.id}" >
+        <img class="card-img-top" src="${item.image}"/>
+        <div class="card-body">
+        <button id="${item.id}"class="btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
      <img src="https://pics.freeicons.io/uploads/icons/png/19067155231543238878-512.png" class=" ">
 
@@ -84,15 +111,18 @@ async function getPosts() {
       <img src="https://pics.freeicons.io/uploads/icons/png/18192734801556282330-512.png" class=" ">
 
       </button>
-      </div>
+      <h5 class="card-title">${item.header}</h5>
+        <p class="card-text">${item.desc}</p>
+        
+        </div>
+        </div>
 
-    <div class="post-text d-block mb-3">
-    <h5>${item.header}</h5>
-    <span>${item.desc}</span>
+        </div>
     
-     </div>
-    </div>
-        `);
+    
+    
+    
+    `);
   });
 }
 
