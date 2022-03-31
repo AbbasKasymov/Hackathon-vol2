@@ -37,7 +37,8 @@
   object-fit: contain;
 }
 .btn-delete img,
-.btn-edit img {
+.btn-edit img,
+.btn-like img {
   width: 30px;
 }
 

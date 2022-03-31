@@ -4,25 +4,29 @@
       "header": "аадлыовлдаоыв",
       "desc": "аадлыовлдаоыв",
       "image": "https://images.pexels.com/photos/10659976/pexels-photo-10659976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "id": 2
+      "id": 2,
+      "likes": 3
     },
     {
       "header": "SomeShit",
       "desc": "Somethsi daklsdnlaskdkladjkladjlkads",
       "image": "https://images.pexels.com/photos/10000267/pexels-photo-10000267.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "id": 3
+      "id": 3,
+      "likes": 3
     },
     {
       "header": "fskdjflsdfl",
       "desc": "flsdnflksdfnkl",
       "image": "https://images.pexels.com/photos/10665369/pexels-photo-10665369.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "id": 4
+      "id": 4,
+      "likes": 1
     },
     {
       "header": "fsdf.ms.d,f,",
       "desc": "dsnflsdnflnsdl",
       "image": "https://images.pexels.com/photos/10483258/pexels-photo-10483258.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-      "id": 5
+      "id": 5,
+      "likes": 8
     },
     {
       "header": "fsdmfsd.,",
@@ -34,7 +38,8 @@
       "header": "f,.sdmf.,",
       "desc": "f.s,dmfd.,",
       "image": "https://images.pexels.com/photos/6761851/pexels-photo-6761851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "id": 8
+      "id": 8,
+      "likes": 2
     },
     {
       "header": "sdf sd,f",

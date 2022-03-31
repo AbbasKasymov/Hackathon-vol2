@@ -68,12 +68,18 @@ async function getPosts() {
     postsList.append(`
     <div class="post m-3 d-flex flex-column" style="width: 320px">
     <div class="d-block">
-     <button class="post-item" id="${item.id}"><img class="card-image" style="width: 320px" src="${item.image}"/></button>
+     <button class="post-item" id="${
+       item.id
+     }"><img class="card-image" style="width: 320px" src="${
+      item.image
+    }"/></button>
      </div>
 
-     <div class="buttons d-block            ">
+     <div class="buttons d-block">
      
-     <button id="${item.id}"class="btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+     <button id="${
+       item.id
+     }"class="btn-edit" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
      <img src="https://pics.freeicons.io/uploads/icons/png/19067155231543238878-512.png" class=" ">
 
@@ -84,6 +90,11 @@ async function getPosts() {
       <img src="https://pics.freeicons.io/uploads/icons/png/18192734801556282330-512.png" class=" ">
 
       </button>
+      <button class="btn-like" id="${item.id}" >
+        <image src="https://cdn-icons-png.flaticon.com/128/1029/1029132.png" class="">
+      </button>
+      <span>${item.likes || 0}</span>
+
       </div>
 
     <div class="post-text d-block mb-3">
@@ -135,6 +146,24 @@ editForm.on("submit", async (event) => {
   });
   getPosts();
   editModal.modal("hide");
+});
+//! like
+let likeCounter = $(".btn-like");
+
+count = 0;
+$(document).on("click", ".btn-like", async (event) => {
+  let id = event.currentTarget.id;
+  const response = await fetch(`${api}/${id}`);
+  const data = await response.json();
+  let likes = data.likes || 0;
+  await fetch(`${api}/${id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ likes: likes + 1 }),
+  });
+  getPosts();
 });
 
 //! delete
