@@ -1,6 +1,20 @@
-/* body {
+body {
+  /* background: linear-gradient(120deg, #0000ff, #b22222); */
+  background: black;
+}
+.navbar {
   background: linear-gradient(120deg, #0000ff, #b22222);
-} */
+}
+.card {
+  box-shadow: 0px -1px 0px 4px rgba(34, 76, 189, 1);
+  -webkit-box-shadow: 0px -1px 0px 4px rgba(34, 76, 189, 1);
+  -moz-box-shadow: 0px -1px 0px 4px rgba(34, 76, 189, 1);
+}
+.card-desc {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
 .navbar {
   height: 80px;
@@ -32,7 +46,8 @@
   background: transparent;
 }
 .btn-delete img,
-.btn-edit img {
+.btn-edit img,
+.btn-like img {
   width: 30px;
 }
 
